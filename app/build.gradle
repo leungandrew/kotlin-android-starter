@@ -13,6 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -59,6 +60,9 @@ dependencies {
     testCompile('com.squareup.assertj:assertj-android:1.0.0') {
         exclude group: 'com.android.support'
     }
+    // Testing-only dependencies
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
 }
 repositories {
     mavenCentral()

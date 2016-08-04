@@ -21,12 +21,9 @@ make all the setup faster
 * Robolectric
 * Anko
 * RecyclerView
+* Dagger
 
 ## Future Considerations
-
-### Dagger?
-
-Man Dagger is a pain to setup, but is it essential?
 
 ### Styleguide
 

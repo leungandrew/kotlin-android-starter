@@ -11,7 +11,7 @@ open class App : Application() {
         @JvmStatic lateinit var component: AppComponent
     }
 
-    protected open fun buildComponent() {
+    open fun buildComponent() {
         component = DaggerAppComponent.builder().appModule(AppModule(this)).build()
     }
 
